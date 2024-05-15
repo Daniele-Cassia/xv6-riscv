@@ -503,3 +503,14 @@ sys_pipe(void)
   }
   return 0;
 }
+
+
+uint64 sys_getcnt(void) {
+  int syscall_num;
+  argint(0, &syscall_num);
+
+  if (syscall_num < 0 || syscall_num >= 23)
+    return -1;  // retorna -1 caso o n° da syscall seja inválido
+
+  return syscalls_count[syscall_num];
+}

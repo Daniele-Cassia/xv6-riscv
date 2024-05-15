@@ -681,3 +681,5 @@ procdump(void)
     printf("\n");
   }
 }
+
+uint syscalls_count[23] = {0}; // inicializa array
