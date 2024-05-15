@@ -106,4 +106,4 @@ struct proc {
   char name[16];               // Process name (debugging)
 };
 
-extern uint syscalls_count[23]; // cria array para guardar qtde de syscalls
+extern uint64 syscalls_count[23]; // cria array para guardar qtde de syscalls

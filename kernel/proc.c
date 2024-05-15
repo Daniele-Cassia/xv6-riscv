@@ -682,4 +682,4 @@ procdump(void)
   }
 }
 
-uint syscalls_count[23] = {0}; // inicializa array
+uint64 syscalls_count[23] = {0}; // inicializa array
